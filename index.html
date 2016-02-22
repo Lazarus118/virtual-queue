@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Virtual Queue</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
+  <!-- Montserrat Sans -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400, 700' rel='stylesheet' type='text/css'>     
+  
+  
+	</head>
+	<body>
+	
+			<div class="wrapper-main">
+			
+			
+			 <div class="navbar">
+				  <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+				  <a class="link" href="#">
+					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
+					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
+				  </a>
+				  <a class="link" href="#">
+					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
+					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
+				  </a>
+				  <a class="link" href="#">
+					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
+					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
+				  </a>
+				  <a class="link" href="#">
+					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
+					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
+				  </a>
+				  <a class="link about" href="#about">
+					<span class="active"><span class="valign"><span class="vertical">ABOUT</span></span></span>
+					<span class="hover"><span class="valign"><span class="vertical">ABOUT</span></span></span>
+				  </a>
+			</div>
+			
+			<div class="modal" id="about" style="display: none;">
+				<a href="#" class="close">×</a>
+
+				<h3>Who are we?</h3>
+				<hr>
+				<p>#teamCaribbean comprise of seven(7) members from various different islands in that region.</p><br />
+				
+				<p>Shamar Saddler | Frontend, Full-stack Developer - Jamaica</p>
+				<p>Lemuel Boyce | Backend, Web Developer - Suriname</p>
+				<p>Austin Lazarus | Backend, Full-stack Developer - Dominica</p>
+				<p>Maurice Rogers | Backend, Web Developer - Belize</p>
+				<p>David Urbina | Frontend, Mobile Developer - Belize</p>
+				<p>Rafael Demoura | Frontend, Web Designer - Suriname</p>
+				<p>Sean Wilkinson | Frontend, Web Designer - Miami, Florida</p>
+				
+			</div>
+
+		<!-- Header -->
+			<header id="header">
+				<img src="images/logo.png" width="30%" height="30%"/>
+				<h1>Virtual Queue</h1><h4>because waiting in real-life takes time</h4>
+				<p>The world's first customizable end to end (Customer - Business) Wait in-line management system.</p>
+	
+			</header>
+
+		<input type="submit" value="ENTER" />
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled.</li><li>All rights reserved: virtualqueue 2016</li>
+				</ul>
+			</footer>
+			
+			</div><!-- //end of wrapper -->
+
+		<!-- Scripts -->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal.js"></script>
+			
+			
+	<script type="text/javascript">
+		jQuery(function($){
+			// bind event handlers to modal triggers
+			$('body').on('click', '.about', function(e){
+				e.preventDefault();
+				$('#about').modal().open();
+			});
+
+			// attach modal close handler
+			$('.modal .close').on('click', function(e){
+				e.preventDefault();
+				$.modal().close();
+			});
+
+			// below isn't important (demo-specific things)
+			$('.modal .more-toggle').on('click', function(e){
+				e.stopPropagation();
+				$('.modal .more').toggle();
+			});
+		});
+	</script>
+			
+			
+
+	</body>
+</html>
