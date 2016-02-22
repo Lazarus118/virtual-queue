@@ -7,11 +7,12 @@
   vertical-align: middle;
 }
 .vertical {
-  word-wrap: break-word;
-  width: 10px;
-  display: inline-block;
-  line-height: 18px;
-  color: #fff;
+    word-wrap: break-word;
+    width: 10px;
+    display: inline-block;
+    line-height: 21px;
+    padding-left: 14px;
+    color: #fff;
 }
 
 .navbar {
@@ -33,6 +34,7 @@
     /* background-color: #ccc; */
     font-size: 23px;
     line-height: 50px;
+	padding-left: 10px;
   }
   .navbar a.link {
     position: relative;

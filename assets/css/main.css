@@ -1197,3 +1197,7 @@
 			}
 
 		}
+		
+		#how-it-works ul li {
+			list-style: none;
+		}

@@ -30,21 +30,13 @@
 			
 			 <div class="navbar">
 				  <a class="menu" href="#"><i class="icon-align-justify"></i></a>
-				  <a class="link" href="#">
-					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
-					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
+				  <a class="link dash" href="#">
+					<span class="active"><span class="valign"><span class="vertical">DASH</span></span></span>
+					<span class="hover"><span class="valign"><span class="vertical">DASH</span></span></span>
 				  </a>
-				  <a class="link" href="#">
-					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
-					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
-				  </a>
-				  <a class="link" href="#">
-					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
-					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
-				  </a>
-				  <a class="link" href="#">
-					<span class="active"><span class="valign"><span class="vertical">HOVER</span></span></span>
-					<span class="hover"><span class="valign"><span class="vertical">HOVER</span></span></span>
+				  <a class="link how-it-works" href="#">
+					<span class="active"><span class="valign"><span class="vertical">HOW</span></span></span>
+					<span class="hover"><span class="valign"><span class="vertical">HOW</span></span></span>
 				  </a>
 				  <a class="link about" href="#about">
 					<span class="active"><span class="valign"><span class="vertical">ABOUT</span></span></span>
@@ -66,6 +58,41 @@
 				<p>David Urbina | Frontend, Mobile Developer - Belize</p>
 				<p>Rafael Demoura | Frontend, Web Designer - Suriname</p>
 				<p>Sean Wilkinson | Frontend, Web Designer - Miami, Florida</p>
+				
+			</div>
+			
+			<div class="modal" id="dash" style="display: none;">
+				<a href="#" class="close">×</a>
+
+				<h3>Peak view of the Dashboard</h3>
+				<hr>
+				<img src="images/dash.png" width="60%" height="60%"/>
+				
+			</div>
+			
+			<div class="modal" id="how-it-works" style="display: none;">
+				<a href="#" class="close">×</a>
+
+				<h3>How it works</h3>
+				<hr>
+				
+				<ul>
+					<h4>Enter number</h4>
+					<li><p>The user enters their phone number on a tablet (or computer) at the respective location, they
+are then placed in a queue, where we keep track of their position and average expected wait
+times.</p>
+</li>
+					
+					<h4>Notify</h4>
+					<li><p>Upon successfully entering the queue, they are notified of how many people are ahead and how
+many minutes/hours they can expect to wait before it is their turn.</p></li>
+					
+					<h4>Checkoff</h4>
+					<li><p>On the administrative side, which basically will be similar to a task list, the administrator or
+representative will “check­off” the customers whose turns have already passed.
+</p></li>
+					
+				</ul>
 				
 			</div>
 
@@ -108,6 +135,16 @@
 			$('body').on('click', '.about', function(e){
 				e.preventDefault();
 				$('#about').modal().open();
+			});
+			
+			$('body').on('click', '.how-it-works', function(e){
+				e.preventDefault();
+				$('#how-it-works').modal().open();
+			});
+			
+			$('body').on('click', '.dash', function(e){
+				e.preventDefault();
+				$('#dash').modal().open();
 			});
 
 			// attach modal close handler
