@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <style>
+            .navbar-inverse .navbar-brand {
+                color: #B6B6B6;
+            }
+            .navbar-inverse .navbar-nav>li>a {
+                color: #B6B6B6;
+            }
+            section.col-xs-12{
+                margin: 0 auto;
+                padding: 5%;
+               }
+            .elementStyle {
+                text-align:center;
+                display: block;
+                margin: 0 auto;
+                padding: 4%;
+                width: 80%;
+            }
+            .tel {
+                text-align:center;
+                display: block;
+                margin: 0 auto;
+                padding: 4%;
+                width: 100%;
+            }
+            .row {
+                padding: 2%;
+            }
+            section{
+                float: left;
+                height: 100vh;
+                    
+            }
+            #first {
+                padding: 10%;
+                heigth: "50%";
+                text-align:center;
+                display: block;
+                margin: 0 auto;
+            }
+            #second {
+                background-color:rgba(255, 255, 255, 0.90);
+            }
+            .header {
+              color: #212121;
+              font-size: 35px;
+              text-transform: uppercase;
+              letter-spacing: 5px;
+              padding-top: 2%;
+              padding-bottom: 2%;
+            }
+            body {
+                background-image:url(../src/assets/images/waiting2.jpg);
+                background-repeat:no-repeat;
+                background-size:cover;
+            }
+            .title {
+                font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 60px;
+                line-height: 70px;
+                margin-bottom: 50px;
+                color: #212121;
+            }
+            .reset {
+                position:absolute;
+                bottom:0;
+            } 
+            .phrase {
+                bottom:30%;
+                position:absolute;
+            }
+        </style>
+        <title>New Entry</title>
+    </head>
+    <body>
+        <div>
+            <acme-navbar creation-date="main.creationDate"></acme-navbar>
+        </div>
+        <section id = "first" class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+            <div>
+                <h1 class="title">The Virtual Queue</h1>
+                </br>
+            </div>
+        </section>
+        <section id = "second" class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="row">
+                <h2 class= "header" style="text-align: center;">{{myInstructions}}</h2>
+                <div class="row" ng-style="gStyle" ng-repeat="group in new.group_list">
+                    <button class="btn btn-primary btn-lg elementStyle" value="{{group.group_id}}" ng-click="stepOne(group.group_id)" >{{group.group_name}}</button>
+                </div>
+                <div class="row" ng-style="qStyle" ng-repeat="item in new.queue_list">
+                    <button class="btn btn-primary btn-lg elementStyle" value="{{item.queue_id}}" ng-click="stepTwo(item.queue_id)">{{item.queue_name}}</button>
+                 </div>
+                <div class="row" ng-style="phoneStyle">
+                    <h4><span class="tel"><input class="tel"type="text" ng-model="telNumber" ng-intl-tel-input/></span></h4>
+                    <button class ='btn btn-danger btn-md elementStyle' ng-click="stepThree()"><span class="glyphicon glyphicon-thumbs-up"</span></button>
+                    
+                </div>
+                <h1 class ="elementStyle">{{ myNumber }}</h1>
+                <label id="message">{{ myMessage }}</label>
+                </br>
+                </br>
+                </br>
+                <button class="btn btn-default reset" ng-style ="resetStyle" ng-click = "reset()">Start Over</button>
+            </div>
+        </section>
+    </body>
+</html>

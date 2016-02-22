@@ -1,0 +1,29 @@
+{
+  "data": {
+    "queue": {
+      "queue_id": 1,
+      "queue_name": "Demo Queue",
+      "queue_wait": 3600
+    },
+    "queue_data": [
+      {
+        "data_id": 1,
+        "phone_number": "8574988713",
+        "queue_entry": "Sat, 20 Feb 2016 10:53:00 GMT",
+        "queue_exit": null
+      },
+      {
+        "data_id": 2,
+        "phone_number": "8574988713",
+        "queue_entry": "Sat, 20 Feb 2016 11:44:00 GMT",
+        "queue_exit": null
+      },
+      {
+        "data_id": 3,
+        "phone_number": "\"2294441982\"",
+        "queue_entry": "Sun, 21 Feb 2016 02:46:52 GMT",
+        "queue_exit": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+angular.module('virtualQueueApp', ['ui.bootstrap', 'ui.router', 'ngCookies']);

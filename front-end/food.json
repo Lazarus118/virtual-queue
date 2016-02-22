@@ -1,0 +1,60 @@
+{
+  "data": {
+    "org_country": "US", 
+    "org_domain": "test", 
+    "org_id": 1, 
+    "org_name": "Test", 
+    "org_queue_groups": [
+    {
+        "group_id": 1, 
+        "group_name": "Down Town", 
+        "group_note": "Just a test group2", 
+        "group_queues": [
+          {
+            "queue_id": 1, 
+            "queue_name": "Payments", 
+            "queue_wait": 3600
+          }, 
+          {
+            "queue_id": 2, 
+            "queue_name": "Issues", 
+            "queue_wait": 3600
+          }
+        ]
+      }, 
+    {   
+        "group_id": 2, 
+        "group_name": "Up Town", 
+        "group_note": "Just a test group2", 
+        "group_queues": [
+          {
+            "queue_id": 1, 
+            "queue_name": "Payments", 
+            "queue_wait": 3600
+          }, 
+          {
+            "queue_id": 2, 
+            "queue_name": "Issues", 
+            "queue_wait": 3600
+          },{
+            "queue_id": 1, 
+            "queue_name": "New Users", 
+            "queue_wait": 3600
+          }
+        ]
+      }, 
+    {   
+        "group_id": 3, 
+        "group_name": "Out Of Town", 
+        "group_note": "Just a test group3", 
+        "group_queues": [
+          {
+            "queue_id": 1, 
+            "queue_name": "Payments", 
+            "queue_wait": 3600
+          }
+        ]
+      }
+    ]
+  }
+}

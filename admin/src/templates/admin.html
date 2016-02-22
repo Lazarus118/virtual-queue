@@ -1,0 +1,39 @@
+<div>
+
+    <!-- /.panel -->
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Current Queues</h3>
+                </div>
+                <div class="panel-body">
+                    <h3>Queues for {{org.org_name}}</h3>
+                </div>
+                <uib-accordion ng-repeat="group in org.org_queue_groups" close-others="oneAtATime">
+
+                    <uib-accordion-group>
+                        <uib-accordion-heading><span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>{{group.group_name}}</uib-accordion-heading>
+                        <div  ng-repeat="q in group.group_queues ">
+                            <a ng-click="updateQueue(q)">{{q.queue_name}} <small>Current Wait: {{q.queue_wait}} seconds</small></a>
+                            <a ng-click="deleteQueue(q)"><span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span></a>
+                        </div>
+                    </uib-accordion-group>
+                </uib-accordion>
+
+
+                <div class="panel-footer ">
+                    <div ng-click="createModal() " class="btn btn-primary ">New Queue <span class="glyphicon glyphicon-plus
+                    " aria-hidden="true "></span></div>
+                </div>
+
+            </div>
+
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-8 -->
+
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+</div>
